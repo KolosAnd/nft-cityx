@@ -1,0 +1,436 @@
+@media (max-width: 1800px) {
+
+}
+@media (max-width: 1540px) {
+    
+}
+@media (max-width: 1200px) {
+    .m-text, .m-title {
+        font-size: 60px;
+        line-height: 75px;
+    }
+    
+    .horizontal .popup{
+        left: 200%;
+    }
+}
+
+
+/* new view */
+@media (max-width: 992px) {
+    .gallery-item-picture {
+        width: auto;
+    }
+    .timer::before {
+        background-size: cover;
+    }
+    .timer{
+        height: auto;
+    }
+    .timer-row > [class*='col-']{
+        justify-content: center;
+    }
+    h2.b-text {
+        font-size: 90px;
+        line-height: 80px;
+    }
+    .navigation#slide-navigation {
+        position: static;
+    }
+    .nextSwiper{
+        margin-top: 50px;
+    }
+    .ani2 {
+        opacity: 1;
+    }
+    .magnetic.opensea {
+        left: 0;
+    }
+    section.slider > .container::before{
+        content: none
+    }
+    
+    section.slider > .container::after{
+        content: none;
+    }
+    .team-member-picture,
+    .team-member-picture img {
+        width: 340px;
+        height: 392px;
+    }
+    
+    .team-member-name {
+        font-size: 40px;
+        line-height: 45px;
+        margin-top: 15px;
+    }
+
+    section.slider .title-col {
+        min-height: 300px;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 768px) {
+    /* html,body{
+        -webkit-overflow-scrolling : touch !important;
+        overflow: auto !important;
+        height: 100% !important;
+    } */
+
+    section{
+        background-image:  url(../images/noise.png);
+    }
+    .container {
+        width: calc(100% - 10px);
+    }
+
+    .preloader h1{
+        left: calc(50% - 50px);
+    }    
+
+    .preloader h1,
+    h1.vb-text {
+        font-size: 130px;
+        line-height: 110px;
+    }
+    .upper-text {
+        margin: 5px 0;
+    }
+    .main-section .upper-text{
+        text-align: center;
+    }
+    .sidebar{
+        transition: var(--animate-long-duration);
+
+        right: -65px;
+    }
+    .page-content{
+        width: 100%;
+    }
+    header {
+        right: 0;
+    }
+    .signature.down {
+        margin-top: 0px;
+    }
+    .timer ul li{
+        font-size: 14px;
+        padding: 0 25px;
+    }
+    #v0{
+        height: auto;
+    }
+    .horizontal,
+    .horizontal .container-fluid {
+        height: auto;
+    }
+
+    .list-item-text,
+    .accardion-item-text {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .list-item-number,
+    .accardion-item-number {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .list-item,
+    .accardion-item {
+        padding: 30px 0;
+    }
+    section.slider {
+        padding-top: 100px;
+    }
+    .m-text, .m-title {
+        font-size: 60px;
+        line-height: 65px;
+    }
+    section.accardion {
+        padding-bottom: 50px;
+    }
+    section.contact {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .people {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    section.contact::after{
+        content: none;
+    }
+    .horizontal .popup{
+        position: absolute;
+        width: 475px;
+        height: 475px;
+        left: 150%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #090909;
+        padding: 80px 85px;
+    }
+    .nft .m-title {
+        font-size: 70px;
+        line-height: 65px;
+    }
+    .second .swiper {
+        width: 60%;
+    }
+    
+    .main-section{
+        padding-bottom: 60px;
+    }
+    .timer ul {
+        padding-inline-start: 0px;
+    }
+
+    .second .swiper {
+        width: 6    0%;
+    }
+    .bg2{
+        width: 216.48px;
+        height: 216.48px;
+    }
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .preloader h1,
+    h1.vb-text {
+        font-size: 90px;
+        line-height: 70px;
+    }
+    .timer ul li{
+        font-size: 12px;
+        padding: 0 15px;
+    }
+    section.second {
+        padding-top: 50px;
+        padding-bottom: 260px;
+    }
+    h2.b-text {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .list-item-text,
+    .accardion-item-text {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .list-item-number,
+    .accardion-item-number {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .list-item,
+    .accardion-item {
+        padding: 22px 0;
+    }
+    .accardion-item-hidden {
+        font-size: 12px;
+    }
+    .active .accardion-item-hidden {
+        padding: 15px 0;
+        height: auto;
+    }
+    .contact .signature-img {
+        display: none;
+    }
+    .contact-row {
+        margin-top: 60px;
+        padding-bottom: 30px;
+    }
+    .contact-row.-revert {
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    .round-button.inverse.big{
+        width: 100px;
+        margin: 0 40px 0 0;
+    }
+    .nft .m-text {
+        font-size: 60px;
+    }
+    .nft section.contact::before{
+        transform: translate(-50%) scale(.4);
+        bottom: -210px;
+    }
+    .second .swiper {
+        position: relative;
+        width: 100%;
+    }
+    .second  .wrapper{
+        position: relative;
+        top: 0;
+    }
+    .wrapper .signature {
+        margin-top: 40px;
+    }
+    section.second>.container:first-child::after {
+        transform: scale(1.3) translate(-50px, -150px);
+    }
+    .second .navigation {
+        top: -50px;
+    }
+
+    .ani2{
+        opacity: 1;
+        will-change: opacity;
+    
+    }
+    .ani.is-inview {
+        animation: none; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: var(--animate-long-duration); /* don't forget to set a duration! */
+    }
+
+    section.slider h4 {
+        margin-top: 60px;
+    }
+    .team-member-name {
+        font-size: 40px;
+        line-height: 45px;
+        margin-top: 15px;
+    }
+    section.team {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h2.m-title.-right{
+        margin-right: 0px;
+     }
+     .accardion-item-text {
+        padding-left: 30px;
+     }
+
+     .popup{
+        display: none;
+     }
+
+     section.list {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    section.gallery {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .nft section.slider {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .nft .m-title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .gallery-item-content span:first-child {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .window-img::before {
+        bottom: -40px;
+    }
+
+    .magnetic.opensea {
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nextSwiper {
+        margin-top: 20px;
+    }
+
+    section.slider .title-col {
+        min-height: 280px;
+        justify-content: space-between;
+    }
+    .nextSwiper .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media (max-width: 440px) {
+    .preloader h1,
+    h1.vb-text {
+        font-size: 80px;
+        line-height: 70px;
+    }
+    .preloader h1 {
+        left: calc(50% - 41px);
+    }
+    
+    h1.vb-text + span {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 38px;
+        line-height: 78%;
+    }
+    .nft_scroll{
+        display: none;
+    }
+    .window-img {
+        margin: 50px auto;
+    }
+    /* .timer ul li:last-child{
+        display: none;
+    } */
+    .horizontal .popup {
+        position: absolute;
+        width: 475px;
+        height: 475px;
+        left: 50%;
+        top: 250%;
+    }
+    .nextSwiper video{
+        width: 330px;
+    }
+
+    .people{
+        transform: scale(.8);
+    }
+    .m-text, .m-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .nft .m-text {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .second .swiper {
+        width: 120%;
+    }
+}
+
+@media (max-width: 400px) {
+    .preloader h1,
+    h1.vb-text {
+        font-size:40px;
+        line-height: 70px;
+    }
+    .preloader h1 {
+        left: calc(50% - 35px);
+    }
+
+    h1.vb-text + span {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 78%;
+    }
+    .team-member-picture,
+    .team-member-picture img {
+        width: 340px;
+        height: 392px;
+    }
+   
+    .timer ul li span {
+        font-size: 35px;
+    }
+}

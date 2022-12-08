@@ -2,14 +2,14 @@
 
 }
 @media (max-width: 1540px) {
-    
+
 }
 @media (max-width: 1200px) {
     .m-text, .m-title {
         font-size: 60px;
         line-height: 75px;
     }
-    
+
     .horizontal .popup{
         left: 200%;
     }
@@ -34,31 +34,13 @@
         font-size: 90px;
         line-height: 80px;
     }
-    .navigation#slide-navigation {
-        position: static;
-    }
-    .nextSwiper{
-        margin-top: 50px;
-    }
-    .ani2 {
-        opacity: 1;
-    }
-    .magnetic.opensea {
-        left: 0;
-    }
-    section.slider > .container::before{
-        content: none
-    }
-    
-    section.slider > .container::after{
-        content: none;
-    }
+
     .team-member-picture,
     .team-member-picture img {
         width: 340px;
         height: 392px;
     }
-    
+
     .team-member-name {
         font-size: 40px;
         line-height: 45px;
@@ -86,7 +68,7 @@
 
     .preloader h1{
         left: calc(50% - 50px);
-    }    
+    }
 
     .preloader h1,
     h1.vb-text {
@@ -139,9 +121,7 @@
     .accardion-item {
         padding: 30px 0;
     }
-    section.slider {
-        padding-top: 100px;
-    }
+
     .m-text, .m-title {
         font-size: 60px;
         line-height: 65px;
@@ -177,16 +157,12 @@
     .second .swiper {
         width: 60%;
     }
-    
+
     .main-section{
         padding-bottom: 60px;
     }
     .timer ul {
         padding-inline-start: 0px;
-    }
-
-    .second .swiper {
-        width: 6    0%;
     }
     .bg2{
         width: 216.48px;
@@ -277,11 +253,7 @@
         top: -50px;
     }
 
-    .ani2{
-        opacity: 1;
-        will-change: opacity;
-    
-    }
+
     .ani.is-inview {
         animation: none; /* referring directly to the animation's @keyframe declaration */
         animation-duration: var(--animate-long-duration); /* don't forget to set a duration! */
@@ -335,25 +307,6 @@
         bottom: -40px;
     }
 
-    .magnetic.opensea {
-        bottom: -10%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .nextSwiper {
-        margin-top: 20px;
-    }
-
-    section.slider .title-col {
-        min-height: 280px;
-        justify-content: space-between;
-    }
-    .nextSwiper .swiper-wrapper {
-        position: relative;
-        width: 100%;
-        height: 450px;
-    }
 }
 
 @media (max-width: 440px) {
@@ -365,7 +318,7 @@
     .preloader h1 {
         left: calc(50% - 41px);
     }
-    
+
     h1.vb-text + span {
         font-style: normal;
         font-weight: 300;
@@ -387,9 +340,6 @@
         height: 475px;
         left: 50%;
         top: 250%;
-    }
-    .nextSwiper video{
-        width: 330px;
     }
 
     .people{
@@ -429,7 +379,7 @@
         width: 340px;
         height: 392px;
     }
-   
+
     .timer ul li span {
         font-size: 35px;
     }

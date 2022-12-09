@@ -20,7 +20,7 @@ var getBrowserWidth = function(){
 
 // document.addEventListener("readystatechange", (event) => {
 //   if (event.target.readyState === "interactive") {
-    
+
 //   } else if (event.target.readyState === "complete") {
 //    $(".preloader-show").removeClass("preloader-show");
 //   }
@@ -48,7 +48,7 @@ jQuery(document).ready(function() {
       var scrollDirectionDown = true;
       var intervalRewind;
 
-      video.addEventListener("click", function(event) { 
+      video.addEventListener("click", function(event) {
             if (video.paused == true) {
                 video.play();
             }
@@ -75,7 +75,7 @@ jQuery(document).ready(function() {
               scrollDirectionDown = true;
             else
               scrollDirectionDown = false;
-          
+
             lastTop = deltaY;
 
             const percentScrolled = (deltaY - distanceFromTop) / (distanseBottom - distanceFromTop);
@@ -97,16 +97,16 @@ jQuery(document).ready(function() {
         }
         requestAnimationFrame(scrollVideo);
       }
-      
+
       registerVideo(video);
   }
 
 
-  function rewind(rewindSpeed) {    
+  function rewind(rewindSpeed) {
     clearInterval(intervalRewind);
     var startSystemTime = new Date().getTime();
     var startVideoTime = video.currentTime;
-    
+
     intervalRewind = setInterval(function(){
         video.playbackRate = 1.0;
         if(video.currentTime == 0){
@@ -179,13 +179,13 @@ jQuery(document).ready(function() {
 
   var deltaY = 0;
   var header = document.getElementsByClassName("header")[0];
-  
+
   scroll.on('scroll', (args) => {
     if(args.delta){
       deltaY = args.delta.y;
       if (args.delta.y > 100) {
         header.classList.add("sticky");
-      } 
+      }
       else {
         header.classList.remove("sticky");
       }
@@ -236,10 +236,10 @@ jQuery(document).ready(function() {
 
   if( getBrowserWidth() == "xs" ||  getBrowserWidth() == "sm"){
     gsap.to(".pin-wrap", {
-      scrollTrigger: 
+      scrollTrigger:
       {
         toggleActions: 'play none none none',
-        scroller: pageContainer, 
+        scroller: pageContainer,
         trigger: pageContainer,
         start: "top -1200",
         scrub: 1,
@@ -252,10 +252,10 @@ jQuery(document).ready(function() {
   }
   else{
     gsap.to(".pin-wrap", {
-      scrollTrigger: 
+      scrollTrigger:
       {
         toggleActions: 'play none none none',
-        scroller: pageContainer, 
+        scroller: pageContainer,
         trigger: pageContainer,
         pin: true,
         // pinSpacing: true,
@@ -282,7 +282,7 @@ jQuery(document).ready(function() {
   ScrollTrigger.defaults({ scroller: scroll });
   ScrollTrigger.addEventListener("refresh", () => scroll.update());
   ScrollTrigger.refresh();
-  }  
+  }
 
 
   $(".nft_scroll").on("click", function(){
@@ -297,20 +297,20 @@ jQuery(document).ready(function() {
 
   /* PRELOADER */
 
-  function initPreloader() { 
+  function initPreloader() {
   var tl = gsap.timeline();
 
-  tl.set(".loading-screen", { 
+  tl.set(".loading-screen", {
     top: "0",
-  });	
-  tl.set("html", { 
+  });
+  tl.set("html", {
     cursor: "wait"
   });
   // tl.set(".loading-screen h1", {
   //   x: "50%",
   //   y: "50%",
   //   translate: "-50%"
-  // }); 
+  // });
 
   tl.to(".loading-screen", {
     duration: 1.6,
@@ -328,16 +328,16 @@ jQuery(document).ready(function() {
   //   duration: 3.1,
   //   top: "50%",
   //   left:"60%",
-  // },"=-2.6"); 
+  // },"=-2.6");
   // tl.set(".bg2", {
   //   duration: 4.6,
   //   top: "0%",
   //   left:"30%",
-  // },"=-4.2"); 
+  // },"=-4.2");
   // tl.to(".loading-screen h1", {
   //   duration: 3.6,
   //   top: "0",
-  // },"=-1.2"); 
+  // },"=-1.2");
 
 
   tl.to(".loading-screen", {
@@ -350,7 +350,7 @@ jQuery(document).ready(function() {
     ease: "Power2.easeOut"
   });
 
-  tl.set("html", { 
+  tl.set("html", {
     cursor: "auto",
   });
   }
@@ -397,7 +397,7 @@ jQuery(document).ready(function() {
   }
   }
 
-  $(".list-content").on('mousemove', moveCircle); 
+  $(".list-content").on('mousemove', moveCircle);
   $(".list-item, .cube").on('mouseenter', (e) => {
       if( $(e.currentTarget).data("item-text") != $(e.currentTarget).closest(".row").find('.cube .list-item-hidden-content').text() )
         $(e.currentTarget).closest(".row").find('.cube .list-item-hidden-content').text( $(e.currentTarget).data("item-text") );
@@ -411,7 +411,7 @@ jQuery(document).ready(function() {
     active = swip.realIndex + 1
   }
   catch{}
-    
+
   $("."+section+" .pages>.current").text(zeroPad(active, 2));
   if($("body.nft").length){
     $("body.nft .current_slide").text(zeroPad(active, 2));
@@ -439,12 +439,12 @@ jQuery(document).ready(function() {
           scale: .7,
           opacity: 0,
         },
-        // progressMultiplier: 2,   
+        // progressMultiplier: 2,
       },
       grabCursor: true,
       preloadImages: false,
       lazy: true,
-      
+
       navigation: {
         nextEl: ".s1n",
         prevEl: ".s1p",
@@ -474,7 +474,7 @@ jQuery(document).ready(function() {
     let m = regex.exec(wid);
     $(".second").css("--slider-border-m-left", (Math.abs(m[1])-20)+"px");
   }
- 
+
 window.addEventListener('resize', function(){
 
   wid = $(".swiper-slide-active").css('transform') ;
@@ -494,8 +494,9 @@ window.addEventListener('resize', function(){
   // initialSlide: 0,
   speed: 1000,
   grabCursor: true,
-  // preloadImages: true,
-  // lazy: true,
+  preloadImages: true,
+  preload: 'auto',
+   lazy: true,
   // loopedSlides:13,
   observer: true,
 
@@ -516,42 +517,40 @@ window.addEventListener('resize', function(){
   },
   on: {
     init: function () {
-      setPages("slider", swiper2);
+      setPages("sliderNfts", swiper2);
     },
   },
   });
 
   swiper2.on('transitionStart', function () {
-  $(".slider>.container").addClass("transition");
-  setPages("slider", swiper2);
+  $(".sliderNfts>.container").addClass("transition");
+  setPages("sliderNfts", swiper2);
 
   setTimeout(function(){
-    $(".slider>.container").css("--data-first", $(".nextSwiper .swiper-slide-active").data("color-1"));
-    $(".slider>.container").css("--data-second", $(".nextSwiper .swiper-slide-active").data("color-2"));
-  }, 450);
-
+    $(".sliderNfts>.container").css("--data-first", $(".nextSwiper .swiper-slide-active").data("color-1"));
+    $(".sliderNfts>.container").css("--data-second", $(".nextSwiper .swiper-slide-active").data("color-2"));
+  }, 1500);
+      $(".nextSwiper ").find("video").trigger('pause');
+      $(".nextSwiper .swiper-slide-active").find("video").trigger('play');
   });
   swiper2.on('transitionEnd', function () {
-  $(".slider>.container").removeClass("transition");
+  $(".sliderNfts>.container").removeClass("transition");
 
-  $("#slide-title").text( 
+  $("#slide-title").text(
     $(".nextSwiper .swiper-slide-active").data("slide-title")
   );
-  $("#slide-text").text( 
+  $("#slide-text").text(
     $(".nextSwiper .swiper-slide-active").data("slide-text")
   );
-  $("#slide-about-title").text( 
+  $("#slide-about-title").text(
     $(".nextSwiper .swiper-slide-active").data("slide-about-title")
   );
-  $("#slide-about-text-1").text( 
+  $("#slide-about-text-1").text(
     $(".nextSwiper .swiper-slide-active").data("slide-about-text-1")
   );
-  $("#slide-about-text-2").text( 
+  $("#slide-about-text-2").text(
     $(".nextSwiper .swiper-slide-active").data("slide-about-text-2")
   );
-
-  $(".nextSwiper ").find("video").trigger('pause');
-  $(".nextSwiper .swiper-slide-active").find("video").trigger('play');
 
   });
 
@@ -570,7 +569,7 @@ window.addEventListener('resize', function(){
   });
 
   /***** */
-  var targetTime = new Date(2022, 10, 28, 10, 00, 00).getTime(); 
+  var targetTime = new Date(2022, 10, 28, 10, 00, 00).getTime();
 
   value = Math.abs(targetTime - (new Date()).getTime());
 
@@ -587,9 +586,9 @@ window.addEventListener('resize', function(){
   var weeks = Math.floor((time/1000)/60/60/24)  / 7 ;
 
   $('#minutes').text(zeroPad(minutes, 2));
-  $('#hours').text(zeroPad(hours, 2));  
-  $('#days').text(zeroPad(days, 2));  
-  $('#week').text(zeroPad(Math.floor(weeks), 2));  
+  $('#hours').text(zeroPad(hours, 2));
+  $('#days').text(zeroPad(days, 2));
+  $('#week').text(zeroPad(Math.floor(weeks), 2));
   }
 
   // timeToView(value);

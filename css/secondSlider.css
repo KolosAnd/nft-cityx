@@ -71,16 +71,18 @@
     background: var(--data-second);
     border-radius: 50%;
     transition: var(--animate-long-duration);
-    transition-delay: .2s;
+    transition-delay: .8s;
     /* opacity: 0.6; */
     filter: blur(200px);
     transform: translate3d(0,0,0);
 }
 .sliderNfts > .container.transition::after{
-    opacity: 0  ;
+    /*opacity: 0  ;*/
+    right: -100%;
 }
 .sliderNfts > .container.transition::before{
-    opacity: 0  ;
+    /*opacity: 0  ;*/
+    right: -100%;
 }
 
 .navigation#slide-navigation{
@@ -91,25 +93,30 @@
 video {
     object-fit: contain;
 }
+
+.sliderNfts .container {
+    overflow: hidden;
+}
 .sliderNfts > .container #slide-title,
 .sliderNfts > .container #slide-text,
-.sliderNfts > .container #slide-navigation,
+/*.sliderNfts > .container #slide-navigation,*/
 .sliderNfts > .container #slide-about-title,
 .sliderNfts > .container #slide-about-text-1,
 .sliderNfts > .container #slide-about-text-2,
 .nft .container .current_slide{
     transition: var(--animate-fast-duration) ;
+    /*transform: translate(0,0);*/
 }
 
 .sliderNfts > .container.transition #slide-title,
 .sliderNfts > .container.transition #slide-text,
-.sliderNfts > .container.transition #slide-navigation,
+/*.sliderNfts > .container.transition #slide-navigation,*/
 .sliderNfts > .container.transition #slide-about-title,
 .sliderNfts > .container.transition #slide-about-text-1,
 .sliderNfts > .container.transition #slide-about-text-2,
 .nft .container.transition .current_slide{
     transition: var(--animate-long-duration) ;
-    opacity: 0;
+   /*transform: translate(-300%,0);*/
 }
 /* .nextSwiper .swiper-slide > img{
     opacity: 0;
@@ -153,10 +160,25 @@ video {
     justify-content: flex-start;
 }
 
+@media (max-width: 1200px) {
+    .magnetic.opensea{
+        bottom: -18%;
+        left: -13%;
+    }
+    .magnetic.opensea .circle-button{
+        width: 135px;
+        height: 135px;
+    }
+}
+
 @media (max-width: 992px) {
     .sliderNfts .title-col {
         min-height: 300px;
         justify-content: space-between;
+    }
+    .magnetic.opensea{
+        bottom: -9%;
+        left: -8%;
     }
     .magnetic.opensea .circle-button{
        width: 110px;
@@ -251,8 +273,8 @@ video {
 
 @media (max-width: 440px) {
     .magnetic.opensea .circle-button {
-        width: 90px;
-        height: 90px;
+        width: 85px;
+        height: 85px;
     }
     .sliderNfts .sliderNfts-about-title {
         margin-top: 60px;

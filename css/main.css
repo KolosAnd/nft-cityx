@@ -1,6 +1,7 @@
 :root{
     --animate-duration: 250ms;
     --animate-fast-duration: 150ms;
+    --animate-middle-duration: 550ms;
     --animate-long-duration: 950ms;
     --animate-very-long-duration: 1450ms;
     --swiper-theme-color: #FFFFFF;
@@ -44,11 +45,6 @@ section{
     background-image: url(../images/nois-min.png);
     z-index: 0;
 
-}
-/* section { overflow-x: hidden; } */
-
-/* main{
-    position: relative;
 }
 main::after{
     content: "";
@@ -1727,8 +1723,8 @@ section.gallery .title-row::after{
     right: 0;
   }
   .magnetic.opensea{
-    bottom: -5%;
-    left: -20%;
+    bottom: -18%;
+    left: -21%;
     z-index: 10;
     margin: -1px;
     padding: 1px;

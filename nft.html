@@ -46,19 +46,20 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  
-    
-  
+
+
+
     <link href="css/normalize.css" rel="stylesheet" >
     <!-- <link href="css/bootstrap-grid.min.css" rel="stylesheet" > -->
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" >
     <!-- <link href="css/locomotive-scroll.min.css" rel="stylesheet" > -->
     <!-- <link href="css/animate.min.css" rel="stylesheet" > -->
     <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/secondSlider.css" onload="this.onload=null;this.rel='stylesheet'">
     <link href="css/media.css" rel="stylesheet">
 </head>
 <body  class="nft">
@@ -72,7 +73,7 @@
         </div>
       </div>
     </div>
-     
+
   </div>
 
   <header class="header stable">
@@ -96,229 +97,233 @@
   <div class="page-wrapper o-scroll" id="js-scroll" data-scroll-container >
 
     <div class="page-content" >
-    
+
       <main>
-        <section class="slider  ">
+        <section class="sliderNfts">
           <div class="container" style="--data-first:#27809B; --data-second:#B82F19;" >
             <div class="row">
-              <div class="col-12 col-lg-7  title-col" data-scroll>
-                <span class="current_slide"></span>
-                <h2 class="m-text -left" data-scroll  data-scroll-speed="1.5" data-scroll-position="top" id="slide-title">The Terrible dream of America</h2>
-                <div class="slide-text" data-scroll  data-scroll-speed="2" data-scroll-position="top" id="slide-text">2009, oil print, 90x56 cm.</div>
-
-                <div class="navigation" data-scroll  data-scroll-speed="3" data-scroll-position="top" id="slide-navigation">
-                  <a href="https://opensea.io/collection/cityxnft" target="_blank"><div class="round-button inverse big">OpenSea</div></a>
+              <div class="col-12 col-lg-7 title-col" data-scroll>
+                <div class="slider-title-container">
+                  <h2 class="m-text -left ani secondSliderTitle" data-scroll id="slide-title">The Terrible dream of America</h2>
+                </div>
+                <div class="slide-text ani secondSliderText" data-scroll id="slide-text">2009, oil print, 90x56 cm.</div>
+                <div class="navigation  ani" data-scroll id="slide-navigation">
                   <span>NFTs</span>
                   <div class="swiper-prev s2p" ></div>
                   <div class="pages"><span class="current"></span><span class="total"></span></div>
-                  <div class="swiper-next s2n" ></div>
+                  <div class="swiper-next s2n" id="slide-next-arrow" ></div>
+                  <div class="swiper-pagination s2progres"></div>
                 </div>
               </div>
-              <div class="col-12 col-lg-5">
-                  <div class="swiper nextSwiper " data-scroll  data-scroll-speed="0.5" data-scroll-position="top">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide " 
-                        data-slide-title="The Terrible dream of America" 
-                        data-slide-text="Elena Lesnychaya, 2009, oil print, 90x56 cm."
-                        data-slide-about-title = "The funny, ironic, sarcastic series «About Hares»"
-                        data-slide-about-text-1 = "According to the author's idea, the main hero is the twin brother of a human individual at a certain level of his material well-being. He has reached overseas countries as either a tourist or a newly arrived emigrant and poses at the main symbol of democratic America."
-                        data-slide-about-text-2 = "Which brought the author wide popularity
-                        in Ukraine and the love of the audience, did not only stop on socio-political realities, «topics of the day» and everyday troubles in her native Fatherland. "
-                        data-color-1="#27809B"
-                        data-color-2="#B82F19">
-                        <video loop autoplay playsinline poster="/images/NTF/01_LESNICHAYA-min.jpg">
-                          <source src="NFT/01_LESNICHAYA.mp4" type="video/mp4">
-                          <source src="NFT/01_LESNICHAYA.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="kiss" 
-                        data-slide-text="Igor Iliynsky,  2016, oil on canvas, 50x65 cm"
-                        data-slide-about-title = "the romance of human relations"
-                        data-slide-about-text-1 = "Glamorous, at first glance, a picturesque image contains several semantic layers: the romance of human relations, the shift of gender stereotypes, and the role of combat sports in modern society with its cult of strength, youth, and healthy lifestyle. "
-                        data-slide-about-text-2 = "The viewer is free to choose any layer and enjoy the masterful composition and color scheme of the piece."
-                        data-color-1="#DB3603"
-                        data-color-2="#FFCE50">
-                        <video loop playsinline poster="/images/NTF/11_ILIINSKIY-min.jpg">
-                          <source src="NFT/11_ILIINSKIY.mp4" type="video/mp4">
-                          <source src="NFT/11_ILIINSKIY.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="9 People Indifferent to Everything" 
-                        data-slide-text="Gamlet Zinkovsky, 2011, paper, 70х100 см"
-                        data-slide-about-title = "The funny, ironic, sarcastic series «About Hares»"
-                        data-slide-about-text-1 = "9 faceless figures, 9 silhouettes, mannequins filled with air, in which the degree of indifference to everything 
-                        makes them practically invisible to others. "
-                        data-slide-about-text-2 = "Not so significant that even «it's not worth mentioning their names.»"
-                        data-color-1="#A59D9D"
-                        data-color-2="#444D6C">
-                        <video loop playsinline poster="/images/NTF/09_GAMLET-min.jpg">
-                          <source src="NFT/09_GAMLET.mp4" type="video/mp4">
-                          <source src="NFT/09_GAMLET.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="Friendship saves" 
-                        data-slide-text="Roman Minin, 2010, canvas, acrylic, enamel, 60x80 cm"
-                        data-slide-about-title = "pains of the mining 
-                        region in the language of art"
-                        data-slide-about-text-1 = "One of the works of the famous author's 
-                        cycle is «Miner's Folklore». Roman originates from Donbas, and his father and uncles are hereditary miners."
-                        data-slide-about-text-2 = "Minin was one of the first to talk about the pains and problems of the mining region in the language of art. The series belongs to the pre-media era of Minin.                          "
-                        data-color-1="#FB231B"
-                        data-color-2="#FA9D16">
-                        <video loop playsinline poster="/images/NTF/07_MININ-min.jpg">
-                          <source src="NFT/07_MININ.mp4" type="video/mp4">
-                          <source src="NFT/07_MININ.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="bunny" 
-                        data-slide-text="Oleg Mitaso, 1990, fiberboard, oil, nitro paint, acrylic, 70x50 cm "
-                        data-slide-about-title = "the romance of human relations"
-                        data-slide-about-text-1 = "A series of these duet works were created in the late 80s - early 90s of the twentieth century. It has been in the attic of Boris Redko's studio for over thirty years.
-                        Boris was creating his compositions at Mitasov's
-                        house as a very young artist and got to know him despite his well-known unsociability"
-                        data-slide-about-text-2 = "Boris was awarded the attention of the «legend» and got to 
-                        be a co-author. Their collaboration manifested in streams of paint, a secret hieroglyph, signs and 
-                        dots, dashes, lines, and a finishing plot move."
-                        data-color-1="#0F8ABF"
-                        data-color-2="#FFCE50">
-                        <video loop playsinline poster="/images/NTF/02_MITASOV-min.jpg">
-                          <source src="NFT/02_MITASOV.mp4" type="video/mp4">
-                          <source src="NFT/02_MITASOV.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="Cutlery" 
-                        data-slide-text="Stanislav Gedzevich, 2008, oil on canvas, 60x90 cm"
-                        data-slide-about-title = "«Cutlery» refers viewers to the old Dutch still life paintings"
-                        data-slide-about-text-1 = "«Cutlery» refers viewers to the old 
-                        Dutch still life paintings with their velvety tones and play of dark shades of color and highlights. "
-                        data-slide-about-text-2 = "Its restrained
-                        minimalism of means, even some rigidity of the image is addressed to the hyperrealism of contemporary art."
-                        data-color-1="#D0B081"
-                        data-color-2="#953E00">
-                        <video loop playsinline poster="/images/NTF/10_HADZEVICH-min.jpg">
-                          <source src="NFT/10_HADZEVICH.mp4" type="video/mp4">
-                          <source src="NFT/10_HADZEVICH.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="Lilith" 
-                        data-slide-text="Vitaliy Kulikov,  2004, oil on canvas, 86x56 cm "
-                        data-slide-about-title = "Almost a biblical plot: the first woman created by God "
-                        data-slide-about-text-1 = "Almost a biblical plot: the first (before Eve) woman 
-                        created by God for Adam. Lilith is the progenitor of 
-                        feminism. She is a symbol of a representative of not the 
-                        weaker sex dominating a partner, for which she was 
-                        promptly annihilated and depicted in the pose of a Rider."
-                        data-slide-about-text-2 = "One of the four works of the «Sacred Women» pictorial 
-                        cycle"
-                        data-color-1="#B7BACB"
-                        data-color-2="#B15149">
-                        <video loop playsinline poster="/images/NTF/13_KULIKOV-min.jpg">
-                          <source src="NFT/13_KULIKOV.mp4" type="video/mp4">
-                          <source src="NFT/13_KULIKOV.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="Kharkiv 1954" 
-                        data-slide-text="Vasilii Myronenko, paper, color
-                        etching, 1951, 50х40 cm"
-                        data-slide-about-title = "A square in the historical part of Kharkiv"
-                        data-slide-about-text-1 = "Vasily Mironenko is a famous master who received 
-                        recognition and the title of People's Artist in the 
-                        USSR, a singer of socialist industrialization. The author often turned to landscapes and images of his native nature and his beloved city."
-                        data-slide-about-text-2 = "A square in the historical part of Kharkiv, an administrative building with a spire familiar to all Kharkiv residents, and a cute tram of the 50s of the last century remind us of the appearance of the city, which remained unchanged and suffered from the current war! "
-                        data-color-1="#3B8FE3"
-                        data-color-2="#ECAD8E">
-                        <video loop playsinline poster="/images/NTF/03_MIRONENKO-min.jpg">
-                          <source src="NFT/03_MIRONENKO.mp4" type="video/mp4">
-                          <source src="NFT/03_MIRONENKO.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="POOL" 
-                        data-slide-text="Boris Kosarev, 20th, paper, pencil, 30x19.5 cm"
-                        data-slide-about-title = "work from few materials left in the storms of the Civil War"
-                        data-slide-about-text-1 = "Kosarev created his works from those few materials left in the storms of the Civil War: sheets of wrapping paper and stubs of stationery pencils."
-                        data-slide-about-text-2 = "The composition «Pool» is filled with an airy atmosphere, playing with elements of national Ukrainian ornamentation and Gogol's mystical fairy tale."
-                        data-color-1="#64BDFF"
-                        data-color-2="#FCF5EC">
-                        <video loop playsinline poster="/images/NTF/12_KOSAREV-min.jpg">
-                          <source src="NFT/12_KOSAREV.mp4" type="video/mp4">
-                          <source src="NFT/12_KOSAREV.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="Untitled" 
-                        data-slide-text="Vagrich Bakhchanyan, 1990, paper, collotype, 19.3 x 15.5cm"
-                        data-slide-about-title = "known for his collages and photographic collotypes"
-                        data-slide-about-text-1 = "Bakhchanyan is known for his collages, paper, and photographic collotypes."
-                        data-slide-about-text-2 = "In general, collage is the author's favorite artistic method and technique, both in verbal and visual genres, while scissors and glue are the tools!"
-                        data-color-1="#92AC32"
-                        data-color-2="#294A0D">
-                        <video loop playsinline poster="/images/NTF/06_BACKHANYAN-min.jpg">
-                          <source src="NFT/06_BACKHANYAN.mp4" type="video/mp4">
-                          <source src="NFT/06_BACKHANYAN.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="Sex Shop.
-                        Rabbit" 
-                        data-slide-text="Sergey Bratkov, 2016, photo,collage, 60x90 cm"
-                        data-slide-about-title = "ironi about modern mass culture"
-                        data-slide-about-text-1 = "A well-known provocateur Bratkov is ironic about the excessive brightness and straightforwardness of modern mass culture, which is heavily broadcasted by all kinds of electronic media and social networks."
-                        data-slide-about-text-2 = "Women's knees in the subway at rush hour, the station entourage, and the Hare is the winner, as the hero of the famous glitz and magazines."
-                        data-color-1="#667EFF"
-                        data-color-2="#FF4CB6">
-                        <video loop playsinline poster="/images/NTF/08_BRATKOV-min.jpg">
-                          <source src="NFT/08_BRATKOV.mp4" type="video/mp4">
-                          <source src="NFT/08_BRATKOV.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="Gogol Dreamed of Wild Animals" 
-                        data-slide-text="Gamlet + Minin, a fragment of a painting 2008, acrylic, 200x150 cm"
-                        data-slide-about-title = "two cultural figures
-                        who lived a difference of 200 years"
-                        data-slide-about-text-1 = "The mural that was created by the duo of these young artists has been decorating the concrete fence of the VOVATANYA Gallery since 2008."
-                        data-slide-about-text-2 = "The fantasy of the authors brought together two famous cultural figures who lived a difference of 200 years: the writer Nikolai Gogol and the Ukrainian folk primitivist artist Maria Primachenko. "
-                        data-color-1="#41539A"
-                        data-color-2="#FF0000">
-                        <video loop playsinline poster="/images/NTF/04_MININ_GAMLET-min.jpg">
-                          <source src="NFT/04_MININ_GAMLET.mp4" type="video/mp4">
-                          <source src="NFT/04_MININ_GAMLET.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="swiper-slide "
-                        data-slide-title="Photo-
-                        synthesis 3" 
-                        data-slide-text="Artem Volokitin, 2016-2017, oil, canvas, 160x130 cm,"
-                        data-slide-about-title = "response to the violence in his home country, Ukraine"
-                        data-slide-about-text-1 = "The work of Artem Volokitin embodies a visual response to the recent upheaval and violence in his home country, Ukraine. Through explosions and modes of destruction, Volokitin creates an emotional experience and an opportunity for psychological reflection on violence and the politics attached."
-                        data-slide-about-text-2 = "He infuses his work with a sense of magical realism, which blurs the boundaries between reality and myth."
-                        data-color-1="#636385"
-                        data-color-2="#E3E3E3">
-                        <video loop playsinline poster="/images/NTF/05_VOLOKITIN-min.jpg">
-                          <source src="NFT/05_VOLOKITIN.mp4" type="video/mp4">
-                          <source src="NFT/05_VOLOKITIN.webm" type="video/webm">
-                        </video>
-                      </div>
+              <div class="col-12 col-md-8 push-md-2 col-lg-5 push-lg-0">
+                <div class="swiper nextSwiper  ani2" data-scroll>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide "
+                         data-slide-title="The Terrible dream of America"
+                         data-slide-text="Elena Lesnychaya, 2009, oil print, 90x56 cm."
+                         data-slide-about-title = "The funny, ironic, sarcastic series «About Hares»"
+                         data-slide-about-text-1 = "According to the author's idea, the main hero is the twin brother of a human individual at a certain level of his material well-being. He has reached overseas countries as either a tourist or a newly arrived emigrant and poses at the main symbol of democratic America."
+                         data-slide-about-text-2 = "Which brought the author wide popularity
+                          in Ukraine and the love of the audience, did not only stop on socio-political realities, «topics of the day» and everyday troubles in her native Fatherland. "
+                         data-color-1="#27809B"
+                         data-color-2="#B82F19">
+                      <video autoplay loop playsinline>
+                        <source src="NFT/01_LESNICHAYA.mp4" type="video/mp4">
+                        <source src="NFT/01_LESNICHAYA.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="kiss"
+                         data-slide-text="Igor Iliynsky,  2016, oil on canvas, 50x65 cm"
+                         data-slide-about-title = "the romance of human relations"
+                         data-slide-about-text-1 = "Glamorous, at first glance, a picturesque image contains several semantic layers: the romance of human relations, the shift of gender stereotypes, and the role of combat sports in modern society with its cult of strength, youth, and healthy lifestyle. "
+                         data-slide-about-text-2 = "The viewer is free to choose any layer and enjoy the masterful composition and color scheme of the piece."
+                         data-color-1="#DB3603"
+                         data-color-2="#FFCE50">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/11_ILIINSKIY.mp4" type="video/mp4">
+                        <source src="NFT/11_ILIINSKIY.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="9 People Indifferent to Everything"
+                         data-slide-text="Gamlet Zinkovsky, 2011, paper, 70х100 см"
+                         data-slide-about-title = "The funny, ironic, sarcastic series «About Hares»"
+                         data-slide-about-text-1 = "9 faceless figures, 9 silhouettes, mannequins filled with air, in which the degree of indifference to everything
+                          makes them practically invisible to others. "
+                         data-slide-about-text-2 = "Not so significant that even «it's not worth mentioning their names.»"
+                         data-color-1="#A59D9D"
+                         data-color-2="#444D6C">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/09_GAMLET.mp4" type="video/mp4">
+                        <source src="NFT/09_GAMLET.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="Friendship saves"
+                         data-slide-text="Roman Minin, 2010, canvas, acrylic, enamel, 60x80 cm"
+                         data-slide-about-title = "pains of the mining
+                          region in the language of art"
+                         data-slide-about-text-1 = "One of the works of the famous author's
+                          cycle is «Miner's Folklore». Roman originates from Donbas, and his father and uncles are hereditary miners."
+                         data-slide-about-text-2 = "Minin was one of the first to talk about the pains and problems of the mining region in the language of art. The series belongs to the pre-media era of Minin.                          "
+                         data-color-1="#FB231B"
+                         data-color-2="#FA9D16">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/07_MININ.mp4" type="video/mp4">
+                        <source src="NFT/07_MININ.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="bunny"
+                         data-slide-text="Oleg Mitaso, 1990, fiberboard, oil, nitro paint, acrylic, 70x50 cm "
+                         data-slide-about-title = "the romance of human relations"
+                         data-slide-about-text-1 = "A series of these duet works were created in the late 80s - early 90s of the twentieth century. It has been in the attic of Boris Redko's studio for over thirty years.
+                          Boris was creating his compositions at Mitasov's
+                          house as a very young artist and got to know him despite his well-known unsociability"
+                         data-slide-about-text-2 = "Boris was awarded the attention of the «legend» and got to
+                          be a co-author. Their collaboration manifested in streams of paint, a secret hieroglyph, signs and
+                          dots, dashes, lines, and a finishing plot move."
+                         data-color-1="#0F8ABF"
+                         data-color-2="#FFCE50">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/02_MITASOV.mp4" type="video/mp4">
+                        <source src="NFT/02_MITASOV.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="Cutlery"
+                         data-slide-text="Stanislav Gedzevich, 2008, oil on canvas, 60x90 cm"
+                         data-slide-about-title = "«Cutlery» refers viewers to the old Dutch still life paintings"
+                         data-slide-about-text-1 = "«Cutlery» refers viewers to the old
+                          Dutch still life paintings with their velvety tones and play of dark shades of color and highlights. "
+                         data-slide-about-text-2 = "Its restrained
+                          minimalism of means, even some rigidity of the image is addressed to the hyperrealism of contemporary art."
+                         data-color-1="#D0B081"
+                         data-color-2="#953E00">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/10_HADZEVICH.mp4" type="video/mp4">
+                        <source src="NFT/10_HADZEVICH.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="Lilith"
+                         data-slide-text="Vitaliy Kulikov,  2004, oil on canvas, 86x56 cm "
+                         data-slide-about-title = "Almost a biblical plot: the first woman created by God "
+                         data-slide-about-text-1 = "Almost a biblical plot: the first (before Eve) woman
+                          created by God for Adam. Lilith is the progenitor of
+                          feminism. She is a symbol of a representative of not the
+                          weaker sex dominating a partner, for which she was
+                          promptly annihilated and depicted in the pose of a Rider."
+                         data-slide-about-text-2 = "One of the four works of the «Sacred Women» pictorial
+                          cycle"
+                         data-color-1="#B7BACB"
+                         data-color-2="#B15149">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/13_KULIKOV.mp4" type="video/mp4">
+                        <source src="NFT/13_KULIKOV.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="Kharkiv 1954"
+                         data-slide-text="Vasilii Myronenko, paper, color
+                          etching, 1951, 50х40 cm"
+                         data-slide-about-title = "A square in the historical part of Kharkiv"
+                         data-slide-about-text-1 = "Vasily Mironenko is a famous master who received
+                          recognition and the title of People's Artist in the
+                          USSR, a singer of socialist industrialization. The author often turned to landscapes and images of his native nature and his beloved city."
+                         data-slide-about-text-2 = "A square in the historical part of Kharkiv, an administrative building with a spire familiar to all Kharkiv residents, and a cute tram of the 50s of the last century remind us of the appearance of the city, which remained unchanged and suffered from the current war! "
+                         data-color-1="#3B8FE3"
+                         data-color-2="#ECAD8E">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/03_MIRONENKO.mp4" type="video/mp4">
+                        <source src="NFT/03_MIRONENKO.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="POOL"
+                         data-slide-text="Boris Kosarev, 20th, paper, pencil, 30x19.5 cm"
+                         data-slide-about-title = "work from few materials left in the storms of the Civil War"
+                         data-slide-about-text-1 = "Kosarev created his works from those few materials left in the storms of the Civil War: sheets of wrapping paper and stubs of stationery pencils."
+                         data-slide-about-text-2 = "The composition «Pool» is filled with an airy atmosphere, playing with elements of national Ukrainian ornamentation and Gogol's mystical fairy tale."
+                         data-color-1="#64BDFF"
+                         data-color-2="#FCF5EC">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/12_KOSAREV.mp4" type="video/mp4">
+                        <source src="NFT/12_KOSAREV.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="Untitled"
+                         data-slide-text="Vagrich Bakhchanyan, 1990, paper, collotype, 19.3 x 15.5cm"
+                         data-slide-about-title = "known for his collages and photographic collotypes"
+                         data-slide-about-text-1 = "Bakhchanyan is known for his collages, paper, and photographic collotypes."
+                         data-slide-about-text-2 = "In general, collage is the author's favorite artistic method and technique, both in verbal and visual genres, while scissors and glue are the tools!"
+                         data-color-1="#92AC32"
+                         data-color-2="#294A0D">
+                      <video autoplay loop playsinline>
+                        <source src="NFT/06_BACKHANYAN.mp4" type="video/mp4">
+                        <source src="NFT/06_BACKHANYAN.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="Sex Shop.
+                          Rabbit"
+                         data-slide-text="Sergey Bratkov, 2016, photo,collage, 60x90 cm"
+                         data-slide-about-title = "ironi about modern mass culture"
+                         data-slide-about-text-1 = "A well-known provocateur Bratkov is ironic about the excessive brightness and straightforwardness of modern mass culture, which is heavily broadcasted by all kinds of electronic media and social networks."
+                         data-slide-about-text-2 = "Women's knees in the subway at rush hour, the station entourage, and the Hare is the winner, as the hero of the famous glitz and magazines."
+                         data-color-1="#667EFF"
+                         data-color-2="#FF4CB6">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/08_BRATKOV.mp4" type="video/mp4">
+                        <source src="NFT/08_BRATKOV.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="Gogol Dreamed of Wild Animals"
+                         data-slide-text="Gamlet + Minin, a fragment of a painting 2008, acrylic, 200x150 cm"
+                         data-slide-about-title = "two cultural figures
+                          who lived a difference of 200 years"
+                         data-slide-about-text-1 = "The mural that was created by the duo of these young artists has been decorating the concrete fence of the VOVATANYA Gallery since 2008."
+                         data-slide-about-text-2 = "The fantasy of the authors brought together two famous cultural figures who lived a difference of 200 years: the writer Nikolai Gogol and the Ukrainian folk primitivist artist Maria Primachenko. "
+                         data-color-1="#41539A"
+                         data-color-2="#FF0000">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/04_MININ_GAMLET.mp4" type="video/mp4">
+                        <source src="NFT/04_MININ_GAMLET.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="swiper-slide "
+                         data-slide-title="Photo-synthesis 3"
+                         data-slide-text="Artem Volokitin, 2016-2017, oil, canvas, 160x130 cm,"
+                         data-slide-about-title = "response to the violence in his home country, Ukraine"
+                         data-slide-about-text-1 = "The work of Artem Volokitin embodies a visual response to the recent upheaval and violence in his home country, Ukraine. Through explosions and modes of destruction, Volokitin creates an emotional experience and an opportunity for psychological reflection on violence and the politics attached."
+                         data-slide-about-text-2 = "He infuses his work with a sense of magical realism, which blurs the boundaries between reality and myth."
+                         data-color-1="#636385"
+                         data-color-2="#E3E3E3">
+                      <video autoplay loop playsinline >
+                        <source src="NFT/05_VOLOKITIN.mp4" type="video/mp4">
+                        <source src="NFT/05_VOLOKITIN.webm" type="video/webm">
+                      </video>
+                    </div>
                   </div>
+                </div>
+                <div class="magnetic opensea">
+                  <div class="inner">
+                    <a href="https://opensea.io/collection/cityxnft" class="magnet-button circle-button  ani" data-scroll target="_blank">OpenSea</a>
                   </div>
+                </div>
               </div>
             </div>
-            <div class="row ">
+            <div class="row  ani" data-scroll>
               <div class="col-md-7 col-12">
-                <h4 class="ms-title" data-scroll  data-scroll-speed="1.5" data-scroll-position="top" id="slide-about-title">The funny, ironic, sarcastic series "About Hares"</h4>
+                <h4 class="ms-title ani sliderNfts-about-title" data-scroll id="slide-about-title">The funny, ironic, sarcastic series "About Hares"</h4>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-5 col-12"><div class="text" data-scroll  data-scroll-speed="2" data-scroll-position="top" id="slide-about-text-1">According to the author's idea, the main hero is the twin brother of a human individual at a certain level of his material well-being. He has reached overseas countries as either a tourist or a newly arrived emigrant and poses at the main symbol of democratic America.</div></div>
-              <div class="col-md-5 push-md-1 col-12"><div class="text" data-scroll  data-scroll-speed="2" data-scroll-position="top" id="slide-about-text-2">Which brought the author wide popularity
+              <div class="col-md-5 col-12"><div class="text ani" data-scroll id="slide-about-text-1">According to the author's idea, the main hero is the twin brother of a human individual at a certain level of his material well-being. He has reached overseas countries as either a tourist or a newly arrived emigrant and poses at the main symbol of democratic America.</div></div>
+              <div class="col-md-5 push-md-1 col-12"><div class="text ani" data-scroll id="slide-about-text-2">Which brought the author wide popularity
                 in Ukraine and the love of the audience, did not only stop on socio-political realities, «topics of the day» and everyday troubles in her native Fatherland. </div></div>
             </div>
           </div>
@@ -332,7 +337,7 @@
                   /Contacts
                 </div>
                 <h2 class="m-title -center" data-scroll  data-scroll-speed="2" data-scroll-position="top">
-                  we looK foward to hearing from you 
+                  we looK foward to hearing from you
                 </h2>
               </div>
               <div class="col-12">
@@ -340,7 +345,7 @@
                   To reach us please email
                       <div class="contact-info-item -center"><a href="mailto:info@cityx.io" target="_top">info@cityx.io</a></div>
                 </div>
-                
+
 
                 <div class="contact-row -revert">
                   <div class="contact-info">
@@ -350,7 +355,7 @@
                     <!-- <div class="contact-info-item -center"><a href="#">Linkedin</a></div> -->
                   </div>
                 </div>
-                 
+
               </div>
             </div>
           </div>
@@ -382,7 +387,7 @@
             <span class="c-direction-block_item">NFT art PROJECT </span>
             <span class="c-direction-block_item">NFT art PROJECT </span>
             <span class="c-direction-block_item">NFT art PROJECT </span>
-            
+
             <span class="c-direction-block_item">NFT art PROJECT </span>
             <span class="c-direction-block_item">NFT art PROJECT </span>
             <span class="c-direction-block_item">NFT art PROJECT </span>
@@ -392,7 +397,7 @@
             <span class="c-direction-block_item">NFT art PROJECT </span>
             <span class="c-direction-block_item">NFT art PROJECT </span>
             <span class="c-direction-block_item">NFT art PROJECT </span>
-            
+
         </div>
       </div>
     </div>
@@ -428,10 +433,10 @@
       <line x1="275" y1="1.5" x2="300" y2="1.5" stroke="#0085E6" stroke-width="3"/>
       <line x1="300" y1="1.5" x2="325" y2="1.5" stroke="#FFD600" stroke-width="3"/>
     </svg>
-      
-      
+
+
   </div>
- 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
@@ -451,11 +456,11 @@
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/vanilla-load@17.6.1/dist/load.min.js"></script> -->
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
   <script async src="js/main.js" ></script>
-    
+
 </body>
 </html>

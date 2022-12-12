@@ -416,7 +416,7 @@ h1.vb-text + span.is-inview{
 }
 
 #v0{
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 h2.b-text{
@@ -928,11 +928,11 @@ section.second .slider{
     /* padding-top: 275px; */
     position: relative;
     overflow: hidden !important;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 .horizontal .container-fluid{
     padding: 0;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 .horizontal picture img{
     width: 100%;

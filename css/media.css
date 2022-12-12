@@ -13,11 +13,19 @@
     .horizontal .popup{
         left: 200%;
     }
+    section.second{
+        padding-top: 115px;
+        padding-bottom: 130px;
+    }
 }
 
 
 /* new view */
 @media (max-width: 992px) {
+    section.second{
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
     .gallery-item-picture {
         width: auto;
     }

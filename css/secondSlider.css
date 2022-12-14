@@ -32,6 +32,16 @@
     mix-blend-mode: overlay;
 }
 
+.sliderNfts.nftpage::after{
+    content: url(../images/dec.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-110px);
+    opacity: 0.17;
+    mix-blend-mode: overlay;
+}
+
 
 .sliderNfts > .container::before{
     content: '';
